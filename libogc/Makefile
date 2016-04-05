@@ -103,7 +103,7 @@ all: $(CUBEBIN)
 dist-bin:
 	@mkdir -p include
 	@cp $(TOPDIR)/include/fat.h $(TOPDIR)/include/libfatversion.h include
-	@tar --exclude=.svn --exclude=*CVS* -cvjf $(TOPDIR)/distribute/$(VERSTRING)/libfat-ogc-$(VERSTRING).tar.bz2 include lib
+	@tar --exclude=.svn --exclude=*CVS* -cvjf $(TOPDIR)/distribute/$(VERSTRING)/libfatmod-ogc-$(VERSTRING).tar.bz2 include lib
 
 install:
 	@cp lib/wii/libfat.a $(DEVKITPRO)/libogc/lib/wii
